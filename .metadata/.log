@@ -1,0 +1,16 @@
+!SESSION 2017-11-27 13:21:58.051 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20161013_322271 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20161013_1635_B322271
+JIT  - tr.r14.java.green_20161011_125790
+GC   - R28_Java8_SR3_20161013_1635_B322271_CMPRSS
+J9CL - 20161013_322271
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.rpt.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rpt.product.ide
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2017-11-27 13:35:01.240
+!MESSAGE RPTR0000W ALOHA STOP for null
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2017-11-27 13:35:01.245
+!MESSAGE RPTR0000W XMLAlohaTypedEventLoader setStatus HISTORY_COMPLETE for null
