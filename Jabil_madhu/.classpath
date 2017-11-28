@@ -6,6 +6,5 @@
 	<classpathentry kind="lib" path="C:/Program Files/IBM/IBMIMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.600.v20170223_2222/libraries/httpclient-4.3.1.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/IBM/IBMIMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.600.v20170223_2222/libraries/httpcore-4.3.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/IBM/IBMIMShared/plugins/com.ibm.rational.test.lt.codegen.core_7.3.600.v20170223_2222/libraries/httpmime-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/SachinPN/Desktop/Results/cmdlineexecute.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
