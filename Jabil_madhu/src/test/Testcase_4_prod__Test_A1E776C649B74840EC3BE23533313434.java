@@ -839,7 +839,7 @@ private VariableAction varAction_1(final IContainer parent) {
 	}
 
 private HTTPPage page_1(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7777C0D7BD9C0DCF4B83631323436");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7777C0D7BD9C0DCF4B83631323436");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "Incontrol_1_Login", "A1E7777C0D7BD9C0DCF4B83631323436") {
@@ -956,7 +956,7 @@ private HTTPPage page_1(final IContainer parent) {
 		return reqAction;
 	}
 private HTTPPage page_2(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7777DB8D5DBD0DCF4B83631323436");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7777DB8D5DBD0DCF4B83631323436");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "CIS_1_Login", "A1E7777DB8D5DBD0DCF4B83631323436") {
@@ -1362,7 +1362,7 @@ private HTTPPage page_2(final IContainer parent) {
 		return reqAction;
 	}
 private HTTPPage page_3(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7768D2BB09AB1D202B93534383732");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7768D2BB09AB1D202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "OKTA_1_Login", "A1E7768D2BB09AB1D202B93534383732") {
@@ -2102,7 +2102,7 @@ private HTTPPage page_3(final IContainer parent) {
 	}
 
 private HTTPPage page_4(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7768D2BC9A0FDD202B93534383732");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7768D2BC9A0FDD202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "OKTA_2_Login_Username", "A1E7768D2BC9A0FDD202B93534383732") {
@@ -2224,7 +2224,7 @@ private HTTPPage page_4(final IContainer parent) {
 		return reqAction;
 	}
 private HTTPPage page_5(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7768D2BCB0087D202B93534383732");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7768D2BCB0087D202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "OKTA_2_Login_Password", "A1E7768D2BCB0087D202B93534383732") {
@@ -2405,7 +2405,7 @@ String requestData_2 = strBuf_1.toString();
 	}
 
 private HTTPPage page_6(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7777C3B315BB0DCF4B83631323436");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7777C3B315BB0DCF4B83631323436");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "OKTA_1_Verification", "A1E7777C3B315BB0DCF4B83631323436") {
@@ -3049,7 +3049,7 @@ String requestData_3 = strBuf_2.toString();
 		return reqAction;
 	}
 private HTTPPage page_7(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7777C3F9CA510DCF4B83631323436");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7777C3F9CA510DCF4B83631323436");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "CIS_1_Verification", "A1E7777C3F9CA510DCF4B83631323436") {
@@ -3295,7 +3295,7 @@ private HTTPPage page_7(final IContainer parent) {
 		return reqAction;
 	}
 private HTTPPage page_8(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7768D2BCC11F3D202B93534383732");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7768D2BCC11F3D202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "Incontrol_Verification", "A1E7768D2BCC11F3D202B93534383732") {
@@ -3920,7 +3920,7 @@ private HTTPPage page_8(final IContainer parent) {
 		return reqAction;
 	}
 private HTTPPage page_9(final IContainer parent) {
-			HTTPThink think = new HTTPThink(20, 1000, parent, parent, "A1E7777C4FEDE410DCF4B83631323436");
+			HTTPThink think = new HTTPThink(2, 1, parent, parent, "A1E7777C4FEDE410DCF4B83631323436");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "ER_TC4_FFC_APIS_Incontrol_LandingPage", "A1E7777C4FEDE410DCF4B83631323436") {
@@ -7818,7 +7818,7 @@ String requestData_8 = strBuf_4.toString();
 	}
 
 private HTTPPage page_10(final IContainer parent) {
-			HTTPThink think = new HTTPThink(90, 1000, parent, parent, "A1E7768D2CE8094CD202B93534383732");
+			HTTPThink think = new HTTPThink(9, 1, parent, parent, "A1E7768D2CE8094CD202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "ER_TC4_01_Select_ERapp_from_Dashboard", "A1E7768D2CE8094CD202B93534383732") {
@@ -8562,7 +8562,7 @@ private HTTPPage page_10(final IContainer parent) {
 	}
 
 private HTTPPage page_11(final IContainer parent) {
-			HTTPThink think = new HTTPThink(90, 1000, parent, parent, "A1E7768D2D523D0DD202B93534383732");
+			HTTPThink think = new HTTPThink(9, 1, parent, parent, "A1E7768D2D523D0DD202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "ER_TC4_02_Select_Country", "A1E7768D2D523D0DD202B93534383732") {
@@ -8711,7 +8711,7 @@ private HTTPPage page_11(final IContainer parent) {
 	}
 
 private HTTPPage page_12(final IContainer parent) {
-			HTTPThink think = new HTTPThink(16691, 1, parent, parent, "A1E7768D2DBE4512D202B93534383732");
+			HTTPThink think = new HTTPThink(1, 1, parent, parent, "A1E7768D2DBE4512D202B93534383732");
 	parent.add(think);
 	
 		HTTPPage page = new HTTPPage(parent, "Incontrol_Logout", "A1E7768D2DBE4512D202B93534383732") {

@@ -52,8 +52,6 @@ public class GIT_Testing_Schedule_A1E7D3433C512570F2DAB16532663663
 
 		this.addUserGroup(new UserGroup_1(this));
 
-		this.addUserGroup(new UserGroup_2(this));
-
 		setMaxHealthFailuresToLog(50, -1, 0);
 		super.execute();
 	}
@@ -63,7 +61,7 @@ public class GIT_Testing_Schedule_A1E7D3433C512570F2DAB16532663663
 		public UserGroup_1(IContainer parent) {
 			super(parent, "User Group 1", "A1E7D3433C5D8184F2DAB16532663663");
 
-			setNumUsers(1.0);
+			setNumUsers(2.0);
 
 		}
 
@@ -83,47 +81,6 @@ public class GIT_Testing_Schedule_A1E7D3433C512570F2DAB16532663663
 				public void execute() {
 					this.add(new test.Testcase_4_prod__Test_A1E776C649B74840EC3BE23533313434(this,
 							"A1E7D34349BD9400F2DAB16532663663") {
-						public void execute() {
-							this.setRtbEnabled(false);
-							super.execute();
-						}
-					});
-
-					this.add(new com.ibm.rational.test.lt.execution.protocol.impl.HTTPUserComplete(this));
-					super.execute();
-				}
-			};
-
-			return scenario;
-		}
-
-	}
-
-	public class UserGroup_2 extends UserGroup {
-
-		public UserGroup_2(IContainer parent) {
-			super(parent, "User Group 2", "A1E7D343413B14B4F2DAB16532663663");
-
-			setNumUsers(1.0);
-
-		}
-
-		public IContainer createTesterWorkload(IContainer parent) {
-			return scenario_2(parent);
-		}
-
-		private Container scenario_2(IContainer parent) {
-			Container scenario = new Container(parent, "Default Scenario", "A1E7D343413B14BFF2DAB16532663663") {
-
-				public void reportStopMessage() {
-				}
-
-				public void reportForcedStopMessage() {
-				}
-
-				public void execute() {
-					this.add(new test.Testcase6_prod__Test_A1E776C1394C8010D4A1B83438373139(this,
-							"A1E7D3434C4920E0F2DAB16532663663") {
 						public void execute() {
 							this.setRtbEnabled(false);
 							super.execute();
