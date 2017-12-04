@@ -1,1 +1,0 @@
-﻿define(["dojo/_base/declare"], function(declare){return declare(null, {constructor: function () {},data : function () {return {"type":"QueryLast","live":false,"counters":[null,0,0,0,0,24,24,79.16667,19,5,6298.391304347826,9030.866282002113,43970,772]};}});});
