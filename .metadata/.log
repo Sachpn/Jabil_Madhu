@@ -5877,3 +5877,633 @@ WorkbenchMonitor: Status=Waiting wbLastContact=16:49:00.072 wheresJavierTime=nul
 
 !ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-06 16:49:05.400
 !MESSAGE RPTA0000W Schedule checkDriverStatus(HISTORY_COMPLETE) result is true
+!SESSION 2017-12-20 17:37:18.864 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20161013_322271 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20161013_1635_B322271
+JIT  - tr.r14.java.green_20161011_125790
+GC   - R28_Java8_SR3_20161013_1635_B322271_CMPRSS
+J9CL - 20161013_322271
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -application org.eclipse.hyades.execution.server
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.hyades.execution.server -data C:\Users\SachinPN\Jabil_madhu1
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2017-12-20 17:37:32.926
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.DebugUIPreferenceInitializer.setThemeBasedPreferences(DebugUIPreferenceInitializer.java:210)
+	at org.eclipse.debug.internal.ui.DebugUIPreferenceInitializer.initializeDefaultPreferences(DebugUIPreferenceInitializer.java:83)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:298)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:301)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:370)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:222)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:276)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:74)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getDefaultPreferences(ScopedPreferenceStore.java:237)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getPreferenceNodes(ScopedPreferenceStore.java:268)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.internalGet(ScopedPreferenceStore.java:418)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getString(ScopedPreferenceStore.java:462)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.initPerspectives(PerspectiveManager.java:994)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.startup(PerspectiveManager.java:287)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:552)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.osgi 4 0 2017-12-20 17:37:32.936
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+Root exception:
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.debug.core 4 125 2017-12-20 17:37:32.938
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in org.eclipse.debug.ui was unable to load class org.eclipse.debug.internal.ui.sourcelookup.Prompter.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 15 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 25 more
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-12-20 17:37:32.939
+!MESSAGE Plug-in org.eclipse.debug.ui was unable to load class org.eclipse.debug.internal.ui.sourcelookup.Prompter.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 25 more
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:37:50.164
+!MESSAGE RPTA0000W SmartLoadManager start - displaying stages
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:37:50.175
+!MESSAGE RPTA0000W users=2 duration=600000 stagger=1000 alluser=false lag=0
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:38:17.641
+!MESSAGE RPTA0000W SmartLoadManager running
+   Schedule status:       RUNNING
+   Schedule active users: 0
+   Current stage:         1
+   Stage status:          Waiting for schedule state RUNNING
+   Stage target users:    2
+   Stage duration:        10m 
+   Stages after current:  0
+   Total duration:        indeterminate
+   Percentage completed:  0.00%
+   Time remaining:        indeterminate
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:38:17.670
+!MESSAGE RPTA0000W SmartLoadManager has been running  
+   Schedule status:       RUNNING
+   Schedule active users: 0
+   Current stage:         1
+   Stage status:          Starting stage execution
+   Stage target users:    2
+   Stage duration:        10m 
+   Stages after current:  0
+   Total duration:        indeterminate
+   Percentage completed:  indeterminate
+   Time remaining:        indeterminate
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:38:17.676
+!MESSAGE RPTA0000W SmartLoadManager has been running  
+   Schedule status:       RUNNING
+   Schedule active users: 2
+   Current stage:         1
+   Stage status:          Duration sleep for stage 1
+   Stage target users:    2
+   Stage duration:        10m 
+   Stages after current:  0
+   Total duration:        indeterminate
+   Percentage completed:  indeterminate
+   Time remaining:        indeterminate
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:39:17.745
+!MESSAGE RPTA0000W SmartLoad statistics for GIT_Testing
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:39:17.747
+!MESSAGE RPTA0000W SmartLoadManager did not complete all stages, stop requested true reason All Agents Inactive, interrupted false
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:39:17.748
+!MESSAGE RPTA0000W Stage 1:  2 users, duration 10m , actual indeterminate number of users, duration 1m , Stop requested reason All Agents Inactive
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-20 17:39:17.752
+!MESSAGE RPTA0000W SmartLoadManager exiting normally
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-20 17:39:28.755
+!MESSAGE RPTA0000W ScheduleExecutorStub:  beginTestLogTransfer()
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-20 17:39:29.843
+!MESSAGE RPTA0000W localhost status at Wed Dec 20 17:39:29 IST 2017
+ maxMemory=5913968640 totalMemory=40763392 freeMemory=7466656
+Console: Success=37 Fail=0 Resets=0 Last Throwable=null Last Throwable Time=never Last Status Code=200 Time last success=Wed Dec 20 17:39:29 IST 2017
+Command: Success=18 Fail=0 Resets=0 Last Throwable=null Last Throwable Time=never Last Status Code=200 Time last success=Wed Dec 20 17:39:28 IST 2017
+History: Success=6 Fail=0 Resets=0 Last Throwable=null Last Throwable Time=never Last Status Code=200 Time last success=Wed Dec 20 17:39:28 IST 2017
+Statistics: Success=19 Fail=0 Resets=0 Last Throwable=null Last Throwable Time=never Last Status Code=200 Time last success=Wed Dec 20 17:39:28 IST 2017
+WorkbenchMonitor: Status=Waiting wbLastContact=17:39:28.798 wheresJavierTime=null
+
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2017-12-20 17:39:33.995
+!MESSAGE RPTR0000W ALOHA STOP for localhost
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2017-12-20 17:39:34.000
+!MESSAGE RPTR0000W XMLAlohaTypedEventLoader setStatus HISTORY_COMPLETE for localhost
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-20 17:39:34.003
+!MESSAGE RPTA0000W Schedule checkDriverStatus(HISTORY_COMPLETE) begin
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-20 17:39:34.004
+!MESSAGE RPTA0000W Schedule checkDriverStatus for localhost: HISTORY_COMPLETE
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 2 0 2017-12-20 17:39:34.006
+!MESSAGE RPTA0000W Schedule checkDriverStatus(HISTORY_COMPLETE) result is true
+!SESSION 2017-12-21 07:56:50.580 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20161013_322271 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20161013_1635_B322271
+JIT  - tr.r14.java.green_20161011_125790
+GC   - R28_Java8_SR3_20161013_1635_B322271_CMPRSS
+J9CL - 20161013_322271
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -application org.eclipse.hyades.execution.server
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -application org.eclipse.hyades.execution.server -data C:\Users\SachinPN\Jabil_madhu1
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2017-12-21 07:57:04.477
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.DebugUIPreferenceInitializer.setThemeBasedPreferences(DebugUIPreferenceInitializer.java:210)
+	at org.eclipse.debug.internal.ui.DebugUIPreferenceInitializer.initializeDefaultPreferences(DebugUIPreferenceInitializer.java:83)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:298)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:301)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:370)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:222)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:276)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:623)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:766)
+	at org.eclipse.core.internal.preferences.AbstractScope.getNode(AbstractScope.java:38)
+	at org.eclipse.core.runtime.preferences.DefaultScope.getNode(DefaultScope.java:74)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getDefaultPreferences(ScopedPreferenceStore.java:237)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getPreferenceNodes(ScopedPreferenceStore.java:268)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.internalGet(ScopedPreferenceStore.java:418)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.getString(ScopedPreferenceStore.java:462)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.initPerspectives(PerspectiveManager.java:994)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.startup(PerspectiveManager.java:287)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:552)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.osgi 4 0 2017-12-21 07:57:04.488
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+Root exception:
+java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+
+!ENTRY org.eclipse.debug.core 4 125 2017-12-21 07:57:04.492
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in org.eclipse.debug.ui was unable to load class org.eclipse.debug.internal.ui.sourcelookup.Prompter.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 15 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 25 more
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-12-21 07:57:04.493
+!MESSAGE Plug-in org.eclipse.debug.ui was unable to load class org.eclipse.debug.internal.ui.sourcelookup.Prompter.
+!STACK 0
+java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.debug.ui (455).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:116)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:805)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.debug.core.DebugPlugin.getStatusHandler(DebugPlugin.java:613)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.saveBeforeLaunch(LaunchConfigurationDelegate.java:258)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.preLaunchCheck(LaunchConfigurationDelegate.java:214)
+	at com.ibm.rational.test.lt.execution.ui.test.rpt.launch.RptLaunchConfigurationDelegate.preLaunchCheck(RptLaunchConfigurationDelegate.java:54)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:840)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:731)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:587)
+	at com.ibm.rational.test.lt.execution.automation.services.TestExecutionService.execute(TestExecutionService.java:652)
+	at org.eclipse.hyades.automation.server.ServiceProxy$1.run(ServiceProxy.java:139)
+	at org.eclipse.hyades.automation.core.utils.ReusableThread.run(ReusableThread.java:131)
+	at java.lang.Thread.run(Thread.java:785)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.debug.internal.ui.DebugUIPlugin.start() of bundle org.eclipse.debug.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:795)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 25 more
+Caused by: java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:93)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.startup(LaunchingResourceManager.java:545)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.getLaunchingResourceManager(DebugUIPlugin.java:336)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.start(DebugUIPlugin.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:650)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	... 32 more
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-21 07:57:22.387
+!MESSAGE RPTA0000W SmartLoadManager start - displaying stages
+
+!ENTRY com.ibm.rational.test.common.schedule.execution 1 0 2017-12-21 07:57:22.395
+!MESSAGE RPTA0000W users=2 duration=600000 stagger=1000 alluser=false lag=0
+
+!ENTRY com.ibm.rational.test.lt.server 4 0 2017-12-21 07:57:24.272
+!MESSAGE RPTS1000E Unable to start the agent communication service because of an error:  RPT is unable to execute a schedule because one of the ports(7080) it uses to communicate with the agents has been taken by another RPT(or other server) process. Ensure only one RPT instance is running. RPT will not be able to execute schedules.
