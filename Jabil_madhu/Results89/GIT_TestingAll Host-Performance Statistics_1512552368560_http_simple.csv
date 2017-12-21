@@ -1,0 +1,64 @@
+Performance Test Run,"GIT_Testing [Dec 6, 2017 at 02:56:08 PM IST]"
+Run Start Time,2017-12-06T02:56:08IST
+Time Range,Entire Run
+Node,All Host
+Agent,Performance Statistics
+Test Name,GIT_Testing
+User Comment,
+,
+Pages->Verification Points->Total Page VPs Failed For Interval->Cumulated->Count,0
+Pages->Response Time->Average Response Time For All Pages For Interval->Cumulated->StdDev,8497.729814077144
+Pages->ResponseCacheHit->PercentCacheHitsAllPageElementsInterval->Cumulated->Percent,
+Run->Active Users->Cumulated->Increment,0
+Transactions->Execution Time->Response Time For All Transactions For Interval->Cumulated->StdDev,11116.542688901376
+Pages->Response Time->Average Response Time For All Page Elements For Interval->Mean,
+Run->Schedule->Executed Test->Cumulated,GIT_Testing
+Transactions->Completed->Total Transaction Hits->Cumulated->Count,12
+Pages->Verification Points->Total Page Element VPs Error For Interval->Cumulated->Count,0
+Pages->InCacheSkipped->PercentInCacheSkippedAllPageElementsInterval->Cumulated->Percent,0.0
+Pages->Verification Points->Total Page VPs Inconclusive For Interval->Cumulated->Count,0
+Transactions->Execution Time->Response Time For All Transactions For Interval->Cumulated->Mean,11556.25
+Run->Bytes->Sent->Cumulated->Rate,1223.1926
+Pages->Goodness->Total Goodness Count For All Pages For Interval->Cumulated->Count,24
+Pages->Response Time->Average Response Time For All Pages For Interval->Cumulated->Max,34207
+Pages->Verification Points->Percent Page VPs Passed For Interval->Cumulated->Percent,
+Run->Run Duration->Cumulated->Count,135000
+Pages->Attempts->Total Page Attempts For Interval->Rate,0.0
+Run->Bytes->Received->Rate,0.0
+Pages->Verification Points->Total Page Element VPs Inconclusive For Interval->Cumulated->Count,0
+Pages->Attempts->Total Page Element Attempts For Interval->Cumulated->Count,168
+Pages->Response Time->Average Response Time For All Page Elements For Interval->Cumulated->Mean,954.9583333333334
+Run->Bytes->Received->Cumulated->Rate,259114.88
+Pages->Response Time->Average Response Time For All Pages For Interval->Cumulated->Min,580
+Pages->Hits->Total Page Element Hits For Interval->Cumulated->Count,168
+Pages->InCacheSkipped->TotalPageElementsInCacheSkippedForInterval->Cumulated->Count,0
+Pages->Attempts->Total Page Attempts For Interval->Cumulated->Count,24
+Pages->RequestCacheAttempt->TotalPageElementsRequestCacheAttemptsForInterval->Cumulated->Count,0
+Pages->Goodness->Percent Goodness For All Page Elements For Interval->Cumulated->Percent,100.0
+Pages->Health->TotalHealthyForInterval->Cumulated->Count,24
+Pages->Verification Points->Total Page VPs Error For Interval->Cumulated->Count,0
+Run->Bytes->Received->Cumulated->Count,34980509
+Pages->Goodness->Total Goodness Count For All Page Elements For Interval->Cumulated->Count,168
+Pages->Verification Points->Total Page VPs Passed For Interval->Cumulated->Count,0
+Run->Run Status->Final->Cumulated,COMPLETE
+Pages->ResponseCacheHit->TotalPageElementsResponseCacheHitsForInterval->Cumulated->Count,0
+Pages->Goodness->Percent Goodness For All Pages For Interval->Cumulated->Percent,100.0
+Pages->Hits->Total Page Hits For Interval->Cumulated->Count,24
+Pages->Redirections->TotalPageElementRedirectionsForInterval->Cumulated->Count,0
+Pages->Response Time->Average Response Time For All Pages For Interval->Cumulated->Mean,5675.916666666667
+Pages->Hits->Total Page Hits For Interval->Rate,0.0
+Run->Bytes->Sent->Rate,0.0
+Pages->Health->TotalPercentHealthyForInterval->Cumulated->Percent,100.0
+Run->Completed Users->Cumulated->Increment,2
+Pages->Verification Points->Total Page Element VPs Failed For Interval->Cumulated->Count,0
+Transactions->Attempts->Total Transaction Attempts->Cumulated->Count,12
+Transactions->Execution Time->Response Time For All Transactions For Interval->Cumulated->Max,34552
+Pages->Verification Points->Percent Page Element VPs Passed For Interval->Cumulated->Percent,100.0
+Run->Total Users->Cumulated->Increment,2
+Pages->Response Time->Average Response Time For All Page Elements For Interval->Cumulated->StdDev,2754.9791165792344
+Pages->ResponseCacheMiss->TotalPageElementsResponseCacheMissesForInterval->Cumulated->Count,0
+Pages->Verification Points->Total Page Element VPs Passed For Interval->Cumulated->Count,20
+Run->Bytes->Sent->Cumulated->Count,165131
+Transactions->Execution Time->Response Time For All Transactions For Interval->Cumulated->Min,2259
+Pages->Response Time->Average Response Time For All Pages For Interval->Mean,
+
